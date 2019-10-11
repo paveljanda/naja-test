@@ -4,5 +4,6 @@ import 'nette-forms';
 import 'bootstrap-datepicker';
 import 'jquery-ui-sortable';
 import 'bootstrap-select';
+import './datagrid.js';
 
 document.addEventListener('DOMContentLoaded', naja.initialize.bind(naja));
