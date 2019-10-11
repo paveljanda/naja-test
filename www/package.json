@@ -10,9 +10,19 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "naja": "^1.6.0"
+    "bootstrap": "^4.3.1",
+    "bootstrap-datepicker": "^1.9.0",
+    "bootstrap-select": "^1.13.12",
+    "happy-inputs": "^2.0.4",
+    "jquery-ui-sortable": "^1.0.0",
+    "naja": "^1.6.0",
+    "nette-forms": "github:nette/forms"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
     "webpack": "^4.41.0"
   }
 }

@@ -6,9 +6,11 @@
 
 	<title>Naja Test</title>
 
-	<script type="text/javascript" src="{$basePath}/dist/bundle.js"></script>
-
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{$basePath}/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{$basePath}/node_modules/happy-inputs/src/happy.css">
+	<link rel="stylesheet" type="text/css" href="{$basePath}/node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css">
+	<link rel="stylesheet" type="text/css" href="{$basePath}/css/datagrid.css">
+	<link rel="stylesheet" type="text/css" href="{$basePath}/css/datagrid-spinners.css">
 </head>
 
 <body>
@@ -19,6 +21,7 @@
 	</div>
 
 	{block scripts}
+		<script type="text/javascript" src="{$basePath}/dist/bundle.js"></script>
 		<script src="https://nette.github.io/resources/js/3/netteForms.min.js"></script>
 	{/block}
 </body>

@@ -1,0 +1,12 @@
+version: "2"
+services:
+  mysql:
+    container_name: naja-test-datagrid-mysql
+    image: mysql:5.7
+    ports:
+      - 20003:3306
+    volumes:
+      - ./_data/mysql:/var/lib/mysql
+      - ./data:/usr/share/datagrid
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1

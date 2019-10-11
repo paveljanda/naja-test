@@ -1,4 +1,10 @@
 parameters:
+	db:
+		user: root
+		password: ''
+		host: 127.0.0.1
+		port: 20003
+		database: naja_test
 
 
 application:
@@ -6,11 +12,10 @@ application:
 	mapping:
 		*: App\*Module\Presenters\*Presenter
 
-
 session:
 	expiration: 14 days
-
 
 services:
 	router: App\Router\RouterFactory::createRouter
 	- App\Components\Stuffer\IStufferFactory
+	- Dibi\Connection(%db%)
